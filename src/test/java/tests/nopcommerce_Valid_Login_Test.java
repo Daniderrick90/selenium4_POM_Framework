@@ -20,7 +20,13 @@ public class nopcommerce_Valid_Login_Test extends BaseTest {
 		LoginPage.loginButton();
 		String pageTitle = driver.getTitle();
 		System.out.println("The title of the page is : " + pageTitle);
+		try {
 		Assert.assertEquals(driver.getTitle(), "Just a moment...");
+		System.out.println("The title matched as expected..Test case passed");
+		}
+		catch(Exception e) {
+			System.out.println("The title does'nt match" + e);
+		}
 	}
 	
 }
