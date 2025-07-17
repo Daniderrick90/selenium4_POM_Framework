@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-17T02:54:36 IST" name="nopcommerce UAT" finished-at="2025-07-17T02:54:40 IST" duration-ms="4508">
+  <suite started-at="2025-07-17T18:06:51 IST" name="Default suite" finished-at="2025-07-17T18:07:00 IST" duration-ms="8788">
     <groups>
     </groups>
-    <test started-at="2025-07-17T02:54:36 IST" name="LoginTest" finished-at="2025-07-17T02:54:40 IST" duration-ms="4508">
+    <test started-at="2025-07-17T18:06:51 IST" name="Default test" finished-at="2025-07-17T18:07:00 IST" duration-ms="8788">
       <class name="tests.nopcommerce_Valid_Login_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@69997e9d]" started-at="2025-07-17T02:54:36 IST" name="setUp" finished-at="2025-07-17T02:54:39 IST" duration-ms="3538" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:51 IST" name="setupReport" finished-at="2025-07-17T18:06:51 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:51 IST" name="setUp" finished-at="2025-07-17T18:06:55 IST" duration-ms="3760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Valid_Login_Test()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@69997e9d]" started-at="2025-07-17T02:54:39 IST" name="Valid_Login_Test" finished-at="2025-07-17T02:54:40 IST" duration-ms="689" status="PASS">
+        <test-method signature="Valid_Login_Test()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:55 IST" name="Valid_Login_Test" finished-at="2025-07-17T18:06:55 IST" duration-ms="587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Valid_Login_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@69997e9d]" started-at="2025-07-17T02:54:40 IST" name="tearDown" finished-at="2025-07-17T02:54:40 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:55 IST" name="tearDown" finished-at="2025-07-17T18:06:55 IST" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_Login_Test status=SUCCESS method=nopcommerce_Valid_Login_Test.Valid_Login_Test()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:55 IST" name="setUp" finished-at="2025-07-17T18:06:59 IST" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inValid_Login_Test()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:59 IST" name="inValid_Login_Test" finished-at="2025-07-17T18:06:59 IST" duration-ms="654" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Just a moment...123] but found [Just a moment...]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Just a moment...123] but found [Just a moment...]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at tests.nopcommerce_Valid_Login_Test.inValid_Login_Test(nopcommerce_Valid_Login_Test.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValid_Login_Test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:06:59 IST" name="tearDown" finished-at="2025-07-17T18:07:00 IST" duration-ms="413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=inValid_Login_Test status=FAILURE method=nopcommerce_Valid_Login_Test.inValid_Login_Test()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:tests.nopcommerce_Valid_Login_Test@37d4349f]" started-at="2025-07-17T18:07:00 IST" name="teardownReport" finished-at="2025-07-17T18:07:00 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
       </class> <!-- tests.nopcommerce_Valid_Login_Test -->
-    </test> <!-- LoginTest -->
-  </suite> <!-- nopcommerce UAT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
