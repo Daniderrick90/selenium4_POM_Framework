@@ -1,0 +1,7 @@
+<suite name="nopcommerce UAT">
+	<test name="LoginTest">
+		<classes>
+			<class name="tests.nopcommerce_Valid_Login_Test"></class>
+		</classes>
+	</test>
+</suite>
