@@ -21,7 +21,6 @@ public class nopcommerce_Valid_Login_Test extends BaseTest {
 		String pageTitle = driver.getTitle();
 		System.out.println("The title of the page is : " + pageTitle);
 		//This is to check the page title matched with the expected result
-		//Test
 		try {
 		Assert.assertEquals(driver.getTitle(), "Just a moment...");
 		System.out.println("The title matched as expected..Test case passed");
